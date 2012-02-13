@@ -88,13 +88,13 @@
     List header
   </li>
         <li>
-          <a href="#">
+          <a href="http://www.google.fr">
             <i class="icon-book"></i>
-            Library
+            Google.fr
           </a>
-          <a href="#">
+          <a href="http://www.webup8.com">
             <i class="icon-book"></i>
-            Library
+            Webup8.com
           </a>
         </li>
         ...
