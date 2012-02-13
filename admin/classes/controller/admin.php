@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The Welcome Controller.
+ * The Editor Controller.
  *
  * A basic controller example.  Has examples of how to set the
  * response body and status.
@@ -9,7 +9,7 @@
  * @package  app
  * @extends  Controller
  */
-class Controller_Welcome extends Controller
+class Controller_Admin extends Controller
 {
 
 	/**
@@ -20,7 +20,7 @@ class Controller_Welcome extends Controller
 	 */
 	public function action_index()
 	{
-		return Response::forge(View::forge('welcome/index'));
+	    return View::forge('admin/default');
 	}
 
 	/**
@@ -30,9 +30,9 @@ class Controller_Welcome extends Controller
 	 * @access  public
 	 * @return  Response
 	 */
-	public function action_hello()
+	public function action_goodbye()
 	{
-		return Response::forge(ViewModel::forge('welcome/hello'));
+		return View::forge('welcome/hello');
 	}
 
 	/**
