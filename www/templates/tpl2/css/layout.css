@@ -1,0 +1,77 @@
+html {
+  font-family: Helvetica;
+  font-size:11px;        height:auto;
+}
+
+body{
+    background-color:silver;
+    height:auto;
+}
+
+@font-face{
+    font-family : "Quadranta";
+    src : url('../fonts/Quadranta-Regular.otf');
+}
+.features li{
+height:22px;
+font-family : "Quadranta";
+font-size:14px;
+}
+
+#header h1{
+      font-family : "Quadranta";
+      color:white;
+      line-height:72px;
+      text-shadow: 0.1em 0.1em 0.05em #333;
+}
+
+#header h2{
+      font-family : "arial";
+      color:silver;
+      position:relative;
+      left:200px;
+      font-size:18px;
+      font-style:italic;
+      border:0px;
+}
+
+
+#page{
+    width:940px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#FFFFFF;
+    padding:20px;
+    min-height:500px;
+    height:auto;
+    font-family : "Quadranta";
+    
+}
+
+#features{
+    width:250px;
+    padding:10px;
+    float:left;
+}
+
+img{
+    float:left;
+    margin: 0em 1em 0.5em 0em;
+    border:none;  
+}
+
+#footer{
+    width:100%;
+    background-color:black;
+    
+}
+
+#footer_container{
+    width:940px;
+    margin-left:auto;
+    margin-right:auto;
+
+    padding:20px;
+    height:200px;
+
+}
