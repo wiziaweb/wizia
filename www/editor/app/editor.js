@@ -38,6 +38,7 @@
       "click .main_button_news": "mainButtonNews",
 
       "click .main_button_mobile": "mainButtonMobile",
+       "click .main_button_exit": "mainButtonExit",
 
       "click .page-tree": "showPageTree",
 
@@ -204,6 +205,22 @@
 			height: 140,
 			modal: true
 		});
+    },
+    // main buttons
+    mainButtonExit: function () {
+        //var template = _.template( $("#mobile_template").html(), {} );
+
+        if($("#main-editor").css("left")=="250px")
+        {
+        $("#left_menu").css("width",200);
+        $("#sub-left-menu").hide();
+        $("#main-editor").css("left",200);
+        }else{
+        $("#left_menu").css("width",50);
+        $("#sub-left-menu").show();
+        $("#main-editor").css("left",250);
+        }
+
     },
 
     // main buttons

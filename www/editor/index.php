@@ -8,16 +8,24 @@
 </head>
 
 <body>
+<div id=wrap>
     <div id=main-head>
-    <a href=# class="myButton main_button_page">Pages</a>
+     >WIZIA
+
+
+
+    <a href=# class=myButton style="float:right;">Pr&eacute;f&eacute;rences</a>
+    <a href=# class="myButton main_button_exit" style="float:right;margin-right:20px;">Quitter</a>
+
+    </div>
+
+<div style="" id=left_menu>    <a href=# class="myButton main_button_page">Pages</a>
     <a href=# class="myButton main_button_news">News</a>
     <a href=# class="myButton main_button_mobile">Mobile</a>
     <a href=# class="myButton main_button_mobile">Catalogue</a>
-    <a href=# class="myButtonBuy main_button_buy">Commander</a>
-    <a href=# class=myButton style="float:right;">Pr&eacute;f&eacute;rences</a>
-    <a href=# style="float:right;margin-right:20px;">Quitter</a>
-
-    </div>
+        <a href=# class="myButtonBuy main_button_buy">Commander</a>
+     </div>
+<div style="display:hide;" id=sub-left-menu > SUB </div>
 <!--    <div id=main-toolbar-left  >
       <div class=gray_box >
       <h2></h2>
@@ -38,7 +46,7 @@
       </div>
     </div>-->
     <div id=main-editor>
-        <div id=block-toolbar>
+      <!--  <div id=block-toolbar>
             <div id=widget-main-toolbar>      <li><a href=# class=page-tree>Voir les pages</a></li>
             <ul id=widget-toolbar>
                 <li><a href=# id=widget-element-text><img src="http://cdn2.iconfinder.com/data/icons/oxygen/128x128/apps/kwrite.png" width=40 />&nbsp;Widget TEXT</a></li>
@@ -54,17 +62,20 @@
             <div id=notification-label>Notification</div>
         </div>
         <div id=toolbar></div>
-        <a href=# id=idd>Switch CSS</a>
+        <a href=# id=idd>Switch CSS</a> -->
         <!-- EDITOR -->
-        <div id=website-preview-editor>
+  <!--      <div id=website-preview-editor>
 
              <div id=page>
              HELO EDITOR
              </div>
-        </div>
+        </div>-->
         <!-- @EDITOR -->
     </div>
-    <div id=jstemplates></div>
+    <div id=footer>     <div id=jstemplates></div>      </div>
+
+
+    </div>
 </body>
 <style>
 	#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }

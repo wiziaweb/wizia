@@ -1,8 +1,31 @@
 
 html,body{
-  margin:0px;
-  height:100%;  width:100%;
+  margin:0px;  padding:0px;
+  height:100%;
+
   font-family:"Helvetica";
+}
+
+#wrap{            position:relative;
+  height:100%;
+}
+#left_menu {
+    position:absolute;
+    left:0;
+    width:200px;
+    top:50px;
+    bottom:50px;
+    background-color:green;
+    background-image:url(http://www.wunderkit.com/images/patterns/lines.jpg);
+}
+
+#sub-left-menu {
+    position:absolute;
+    left:50px;
+    width:200px;
+    top:50px;
+    bottom:50px;
+    background-color:red;
 }
 
 #block-toolbar{
@@ -35,6 +58,17 @@ html,body{
   width:800px;
 }
 
+#main-editor {
+      position:absolute;
+    left:200px;
+    right:0;
+    top:50px;
+    bottom:50px;
+    background-color:yellow;
+    overflow-y:scroll;
+}
+
+
 #main-toolbar-left{
   width:300px;
   height:100%;
@@ -61,7 +95,7 @@ html,body{
 
 }
 #main-editor{
-  position:relative;
+/*  position:relative;
   margin-right:auto;
   margin-left:auto;
   padding:0px;
@@ -69,7 +103,16 @@ html,body{
     float:left;
     background-color: #222222;
     width:100%;
-    height:100%;
+    height:100%;*/
+
+        position:absolute;
+    left:200px;
+    right:0;
+    top:50px;
+    bottom:50px;
+    background-color:yellow;
+    overflow-y:scroll;
+      background-image: url( http://d26ecy1es9i5xz.cloudfront.net/images/backgrounds/darkwood-167d9acab085dc209a6bc2d04782e002008deec5-gz.jpg );     
 }
 
 .widget_splitter_left{
@@ -118,10 +161,33 @@ html,body{
 }
 
 #main-head{
-  padding:5px;
-  background-image: url(http://jsfiddle.net/img/top-bg.png)
-}
 
+  height:50px;    position:absolute;      left:0;
+    width:100%;
+    top:0;
+    height:50px;
+    background-color:red;
+  background-image: url(http://jsfiddle.net/img/top-bg.png);
+
+
+}
+ #footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+
+
+
+    background:#2a2a30 !important;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#414149), to(#2a2a30)) !important;background:-webkit-linear-gradient(#414149, #2a2a30) !important;
+    background:-moz-linear-gradient(center top, #414149 0%, #2a2a30 100%) !important;background:-moz-gradient(center top, #414149 0%, #2a2a30 100%) !important;
+    background:-ms-linear-gradient(#414149, #2a2a30) !important;background:-o-linear-gradient(#414149, #2a2a30) !important;
+    -webkit-background-clip:border-box !important;background-clip:border-box !important;zoom:1;
+    -webkit-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);-moz-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);-o-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);padding:6px;position:absolute;height:40px;left:0px;right:0px;bottom:0px;
+
+}
 
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
