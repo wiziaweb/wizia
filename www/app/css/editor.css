@@ -1,0 +1,293 @@
+
+html,body{
+  margin:0px;  padding:0px;
+  height:100%;
+
+  font-family:"Helvetica";
+}
+
+#wrap{            position:relative;
+  height:100%;
+}
+#left_menu {
+    position:absolute;
+    left:0;
+    width:200px;
+    top:50px;
+    bottom:50px;
+    background-color:green;
+    background-image:url(http://www.wunderkit.com/images/patterns/lines.jpg);
+}
+
+#sub-left-menu {
+    position:absolute;
+    left:50px;
+    width:200px;
+    top:50px;
+    bottom:50px;
+    background-color:red;
+}
+
+#block-toolbar{
+  background-color:silver;
+  border:1px solid red;
+  display:block;
+  height:100px;
+}
+#toolbar{
+  background-color:#FFCC33;
+  display:block;
+  height:50px;
+  color:black;
+}
+
+#widget-toolbar li{
+  display: inline;
+}
+
+#notification-label{
+  width:200px;
+  float:right;
+  position:relative;
+  top:0px;
+}
+
+#widget-main-toolbar{
+  float:left;
+
+  width:800px;
+}
+
+#main-editor {
+      position:absolute;
+    left:200px;
+    right:0;
+    top:50px;
+    bottom:50px;
+    background-color:yellow;
+    overflow-y:scroll;
+}
+
+
+#main-toolbar-left{
+  width:300px;
+  height:100%;
+  background-color: #2C2C2E;
+  outline:1px solid red;
+  float:left;
+  padding:0px;
+}
+.gray_box{
+  background-color:  #373739;
+  margin:10px;
+  -moz-border-radius:4px;
+  color:white;  padding:10px;
+}
+.option_box{
+  background-color:  #CDCDCF;
+  margin:10px;
+  -moz-border-radius:4px;
+  color:#575757;
+  padding:10px;
+}
+
+#website-preview-editor{
+
+}
+#main-editor{
+/*  position:relative;
+  margin-right:auto;
+  margin-left:auto;
+  padding:0px;
+  left:0px;
+    float:left;
+    background-color: #222222;
+    width:100%;
+    height:100%;*/
+
+        position:absolute;
+    left:200px;
+    right:0;
+    top:50px;
+    bottom:50px;
+    background-color:yellow;
+    overflow-y:scroll;
+      background-image: url( http://d26ecy1es9i5xz.cloudfront.net/images/backgrounds/darkwood-167d9acab085dc209a6bc2d04782e002008deec5-gz.jpg );     
+}
+
+.widget_splitter_left{
+  float:left;
+  width:200px;
+  background-color: yellow;
+   height:100%;
+  padding:10px;
+  margin:5px;
+
+  border:1px dotted black;
+}
+
+.widget_splitter_right{
+  float:left;
+  width:400px;
+  height:auto;
+
+   background-color: silver;
+   padding:10px;
+  padding:10px;
+  margin:5px;
+  overflow: visible;
+  border:1px dotted black;
+}
+
+.splitter_hand{
+  background-color: silver;
+  float:left;
+  width:10px;
+  height:100%;
+  margin-top:10px;     border:1px dotted black;
+}
+
+.widget_splitter{
+  padding:0px;
+  margin:0px;
+  height:100px;
+  width:940px;
+;
+
+
+}
+.widget:hover{
+  outline:3px solid silver;
+}
+
+#main-head{
+
+  height:50px;    position:absolute;      left:0;
+    width:100%;
+    top:0;
+    height:50px;
+    background-color:red;
+  background-image: url(http://jsfiddle.net/img/top-bg.png);
+
+
+}
+ #footer {
+    position:absolute;
+    left:0;
+    bottom:0;
+
+
+
+    background:#2a2a30 !important;
+    background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#414149), to(#2a2a30)) !important;background:-webkit-linear-gradient(#414149, #2a2a30) !important;
+    background:-moz-linear-gradient(center top, #414149 0%, #2a2a30 100%) !important;background:-moz-gradient(center top, #414149 0%, #2a2a30 100%) !important;
+    background:-ms-linear-gradient(#414149, #2a2a30) !important;background:-o-linear-gradient(#414149, #2a2a30) !important;
+    -webkit-background-clip:border-box !important;background-clip:border-box !important;zoom:1;
+    -webkit-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);-moz-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);
+    -ms-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);-o-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.25);padding:6px;position:absolute;height:40px;left:0px;right:0px;bottom:0px;
+
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.myButtonBuy {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffc477), color-stop(1, #fb9e25) );
+	background:-moz-linear-gradient( center top, #ffc477 5%, #fb9e25 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc477', endColorstr='#fb9e25');
+	background-color:#ffc477;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #cc9f52;
+}.myButtonBuy:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fb9e25), color-stop(1, #ffc477) );
+	background:-moz-linear-gradient( center top, #fb9e25 5%, #ffc477 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fb9e25', endColorstr='#ffc477');
+	background-color:#fb9e25;
+}.myButtonBuy:active {
+	position:relative;
+	top:1px;
+}
+
+#page-tree{
+  padding:50px;
+  color:white;
+
+}
+#page-tree .page{
+                      border:1px solid silver;
+  background-color:#888888;
+  display:inline-block;
+  color:white;
+  padding:2px;            margin-right:0px;
+  width:80%;
+  text-decoration: none;
+  font-size:11px;
+}
+
+#page-tree .page-add-sub{
+   background-color:#888888;
+        padding:2px;
+  display:inline-block;  width:20px;
+  margin-left:0px;
+}
+
+
+#page-tree ul{
+  padding-left:5px;
+  margin-left:5px;
+}
+
+#page-tree ul > li > ul{
+      position:relative;
+  margin-top:15px;
+  left:8px;
+}
+
+#page-tree li{
+    list-style-type:none;
+  padding:5px;
+  margin:5px;
+}
+
