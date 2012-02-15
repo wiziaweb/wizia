@@ -20,7 +20,7 @@ class Controller_Editor extends Controller
 	 */
 	public function action_index()
 	{
-		echo "Editor";
+	    return View::forge('app/index');
                 //return Response::forge(View::forge('welcome/index'));
 	}
 
