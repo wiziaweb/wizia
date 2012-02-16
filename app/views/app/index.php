@@ -93,7 +93,7 @@
     <script src="lib/underscore-1.js"></script>
     <script src="lib/backbone.js"></script>
     <script src="lib/backbone-localstorage.js"></script>
-    <script src="app/editor.js"></script>
+    <script src="js/views/editor.js"></script>
 
 
 
