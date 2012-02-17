@@ -46,6 +46,7 @@
 <script src="lib/backbone-localstorage.js"></script>
 
 <!--APP-->
+<script src="application/models/editormodel.js"></script>
 <script src="application/views/editor.js"></script>
 <script src="application/template_changer.js"></script>
 
