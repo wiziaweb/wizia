@@ -1,15 +1,16 @@
-
 html,body{
-  margin:0px;  padding:0px;
-  height:100%;
-
-  font-family:"Helvetica";
+    margin:0px;
+    padding:0px;
+    height:100%;
+    font-family:"Helvetica";
 }
 
-#wrap{            position:relative;
-  height:100%;
+#wrap{
+    position:relative;
+    height:100%;
 }
-#left_menu {
+
+#modulebar{
     position:absolute;
     left:0;
     width:200px;
@@ -19,26 +20,27 @@ html,body{
     background-image:url(http://www.wunderkit.com/images/patterns/lines.jpg);
 }
 
-#sub-left-menu {
+#panelbar{
     position:absolute;
     left:50px;
     width:200px;
     top:50px;
     bottom:50px;
     background-color:red;
+    display:none;
 }
 
 #block-toolbar{
-  background-color:silver;
-  border:1px solid red;
-  display:block;
-  height:100px;
+    background-color:silver;
+    border:1px solid red;
+    display:block;
+    height:100px;
 }
 #toolbar{
-  background-color:#FFCC33;
-  display:block;
-  height:50px;
-  color:black;
+    background-color:#FFCC33;
+    display:block;
+    height:50px;
+    color:black;
 }
 
 #widget-toolbar li{
@@ -115,50 +117,7 @@ html,body{
       background-image: url( http://d26ecy1es9i5xz.cloudfront.net/images/backgrounds/darkwood-167d9acab085dc209a6bc2d04782e002008deec5-gz.jpg );     
 }
 
-.widget_splitter_left{
-  float:left;
-  width:200px;
-  background-color: yellow;
-   height:100%;
-  padding:10px;
-  margin:5px;
 
-  border:1px dotted black;
-}
-
-.widget_splitter_right{
-  float:left;
-  width:400px;
-  height:auto;
-
-   background-color: silver;
-   padding:10px;
-  padding:10px;
-  margin:5px;
-  overflow: visible;
-  border:1px dotted black;
-}
-
-.splitter_hand{
-  background-color: silver;
-  float:left;
-  width:10px;
-  height:100%;
-  margin-top:10px;     border:1px dotted black;
-}
-
-.widget_splitter{
-  padding:0px;
-  margin:0px;
-  height:100px;
-  width:940px;
-;
-
-
-}
-.widget:hover{
-  outline:3px solid silver;
-}
 
 #main-head{
 
@@ -250,44 +209,5 @@ html,body{
 	top:1px;
 }
 
-#page-tree{
-  padding:50px;
-  color:white;
 
-}
-#page-tree .page{
-                      border:1px solid silver;
-  background-color:#888888;
-  display:inline-block;
-  color:white;
-  padding:2px;            margin-right:0px;
-  width:80%;
-  text-decoration: none;
-  font-size:11px;
-}
-
-#page-tree .page-add-sub{
-   background-color:#888888;
-        padding:2px;
-  display:inline-block;  width:20px;
-  margin-left:0px;
-}
-
-
-#page-tree ul{
-  padding-left:5px;
-  margin-left:5px;
-}
-
-#page-tree ul > li > ul{
-      position:relative;
-  margin-top:15px;
-  left:8px;
-}
-
-#page-tree li{
-    list-style-type:none;
-  padding:5px;
-  margin:5px;
-}
 

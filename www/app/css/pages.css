@@ -1,0 +1,85 @@
+#page-tree{
+  padding:50px;
+  color:white;
+
+}
+#page-tree .page{
+                      border:1px solid silver;
+  background-color:#888888;
+  display:inline-block;
+  color:white;
+  padding:2px;            margin-right:0px;
+  width:80%;
+  text-decoration: none;
+  font-size:11px;
+}
+
+#page-tree .page-add-sub{
+   background-color:#888888;
+        padding:2px;
+  display:inline-block;  width:20px;
+  margin-left:0px;
+}
+
+
+#page-tree ul{
+  padding-left:5px;
+  margin-left:5px;
+}
+
+#page-tree ul > li > ul{
+      position:relative;
+  margin-top:15px;
+  left:8px;
+}
+
+#page-tree li{
+    list-style-type:none;
+  padding:5px;
+  margin:5px;
+}
+
+.widget_splitter_left{
+  float:left;
+  width:200px;
+  background-color: yellow;
+   height:100%;
+  padding:10px;
+  margin:5px;
+
+  border:1px dotted black;
+}
+
+.widget_splitter_right{
+  float:left;
+  width:400px;
+  height:auto;
+
+   background-color: silver;
+   padding:10px;
+  padding:10px;
+  margin:5px;
+  overflow: visible;
+  border:1px dotted black;
+}
+
+.splitter_hand{
+  background-color: silver;
+  float:left;
+  width:10px;
+  height:100%;
+  margin-top:10px;     border:1px dotted black;
+}
+
+.widget_splitter{
+  padding:0px;
+  margin:0px;
+  height:100px;
+  width:940px;
+;
+
+
+}
+.widget:hover{
+  outline:3px solid silver;
+}

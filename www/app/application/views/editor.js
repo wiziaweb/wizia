@@ -1,13 +1,13 @@
-(function ($) {
+EditorView = Backbone.View.extend({
 
-
-  AppView = Backbone.View.extend({
     el: $("body"),
+
     initialize: function () {
       this.friends = new Friends( null, { view: this });
       //Create a friends collection when the view is initialized.
       //Pass it a reference to this view to create a connection between the two
     },
+
     events: {
       "click #widget-element-text":  "showPrompt",
       "click #widget-element-audio":  "widgetAudio",
@@ -18,28 +18,14 @@
       "click #widget-element-gallery":  "widgetGallery",
       "click #widget-element-columns":  "widgetColumns",
       "click .del_code_widget": "deleteWidget",
-
-      "click .main_button_buy": "mainButtonBuy",
-
-      "click .main_button_page": "mainButtonPage",
-
-      "click .main_button_news": "mainButtonNews",
-
-      "click .main_button_mobile": "mainButtonMobile",
-       "click .main_button_exit": "mainButtonExit",
-
-      "click .page-tree": "showPageTree",
-
-      "click .page-add": "addPage",
-      "click .page-add-sub": "PageAddSub",
     },
+
     showPrompt: function () {
       var friend_name = prompt("Who is your friend?");
       var friend_model = new Friend({ name: friend_name });
       //Add a new friend model to our friend collection
       this.friends.add( friend_model );
     },
-
     deleteWidget: function (e) {
         e.preventDefault();
         widget_to_remove = $(e.target).attr('id');
@@ -47,13 +33,9 @@
         {
           $("#widget_"+widget_to_remove).remove();
         }
-
-
     },
 
     //--- AUDIO ---
-    //-------------
-
     widgetAudio: function () {
         $("#website-preview-editor").append("<br>you add a audio widget <br>");
         var template = _.template( $("#search_template").html(), {widgetid : "widget145"} );
@@ -62,8 +44,6 @@
     },
 
     //--- VIDEO ---
-    //-------------
-
     widgetVideo: function () {
         $("#website-preview-editor").append("<br>Widget Video  <br>");
         var template = _.template( $("#video_widget").html(), {widgetid : "widget145"} );
@@ -79,9 +59,8 @@
     widgetVideoToolbarHide: function () {
         $("#toolbar").hide();
     },
-    //--- CODE ---
-    //-------------
 
+    //--- CODE ---
     widgetCode: function () {
         $("#website-preview-editor").append("<br>you add a code widget <br>");
         var timestamp = new Date().getTime();
@@ -91,7 +70,6 @@
     },
 
     //--- GALLERY ---
-    //-------------
     widgetGallery: function () {
         $("#website-preview-editor").append("<br>you add a code widget <br>");
         var timestamp = new Date().getTime();
@@ -102,8 +80,6 @@
     },
 
     //--- COLUMNS ---
-    //-------------
-
     widgetColumns: function () {
         $("#website-preview-editor").append("<br>you add a code widget <br>");
         var timestamp = new Date().getTime();
@@ -158,93 +134,10 @@
       //Use .get to receive attributes of the model
     },
 
-    // main buttons
-    mainButtonBuy: function () {
-        var template = _.template( $("#buy_template").html(), {} );
-        $("#main-editor").html( template );
-        $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-    },
 
 
-    //
-    // PAGE
-    //
+});
 
-    // main buttons
-    mainButtonPage: function () {
-        var template = _.template( $("#page_template").html(), {} );
-        $("#main-editor").html( template );
-        $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-    },
-
-    // main buttons
-    mainButtonNews: function () {
-        var template = _.template( $("#news_template").html(), {} );
-        $("#main-editor").html( template );
-        $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-    },
-
-    // main buttons
-    mainButtonMobile: function () {
-        var template = _.template( $("#mobile_template").html(), {} );
-        $("#main-editor").html( template );
-        $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-        $( "#dialog" ).dialog({
-			height: 140,
-			modal: true
-		});
-    },
-    // main buttons
-    mainButtonExit: function () {
-        //var template = _.template( $("#mobile_template").html(), {} );
-
-        if($("#main-editor").css("left")=="250px")
-        {
-        $("#left_menu").css("width",200);
-        $("#sub-left-menu").hide();
-        $("#main-editor").css("left",200);
-        }else{
-        $("#left_menu").css("width",50);
-        $("#sub-left-menu").show();
-        $("#main-editor").css("left",250);
-        }
-
-    },
-
-    // main buttons
-    showPageTree: function () {
-        var template = _.template( $("#page-tree").html(), {} );
-        $("#main-editor").html( template );
-        $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-        $( "#dialog" ).dialog({
-			height: 140,
-			modal: true
-		});
-        	$('#page-tree-list').sortable();
-            $('#website-preview-editor').show("slow");     
-    },
-
-    // main buttons
-    addPage: function () {
-        $('#page-tree-list').append("<li ><a href=# class=page>ADDED!!!</a></li>");
-
-    },
-
-    // main buttons
-    PageAddSub: function (event) {
-      widget_id = $(event.target).attr('id');
-      alert(widget_id);
-       $("#"+widget_id).parent().append("<ul><li>ADDED!!!</li></ul>");
-        ///$('#page-tree-list').append("<li>ADDED!!!</li>");
-
-    },
-
-  });
-
-
-
-  var appview = new AppView;
-})(jQuery);
 
 
 
