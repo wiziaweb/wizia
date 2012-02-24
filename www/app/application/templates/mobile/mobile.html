@@ -3,6 +3,9 @@
 
 <p>  La rubrique Mobile vous permet de g&eacute;rer l'appareence des contenus de votre sur les &eacute;quiepemtns.
     Mobile</p>
+   <% _.each(NewsItems, function(link) { %>
+	        <li>HHH<a href="<%= link.name %>"><%= link.name %></a></li>
+	      <% }); %>
 	<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
 </div>
 </script>

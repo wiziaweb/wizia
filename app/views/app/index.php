@@ -3,6 +3,9 @@
 <head>
     <title><?=$title;?></title>
     <link rel="stylesheet" href="css/editor.css" type="text/css" />
+    <link rel="stylesheet" href="css/editor.css" type="text/css" />
+    <link rel="stylesheet" href="css/news.css" type="text/css" />
+
     <link rel="stylesheet" href="css/stylesheet_red.css" type="text/css" id="stl" />
     <link rel="stylesheet" href="lib/jquery-ui/css/smoothness/jquery-ui-1.8.17.custom.css" type="text/css" id="stl" />
     <link rel="stylesheet" href="http://jqueryui.com/themes/base/jquery.ui.all.css" type="text/css" />
@@ -31,6 +34,7 @@
 	#sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
 	#sortable
     </style>
+
 <body>
 <div id=wrap>
     <div id=main-head>
@@ -55,6 +59,7 @@
     </div>
     <div id=footer>
         <div id=jstemplates></div>
+        <div id=news-list>0000</div>
     </div>
     </div>
 </body>
@@ -74,9 +79,20 @@
 <script src="application/views/modulebar.js"></script>
 <script src="application/views/panelbar.js"></script>
 <script src="application/views/pages.js"></script>
+<script src="application/views/news.js"></script>
 <script src="application/views/editor.js"></script>
 <script src="application/views/main.js"></script>
 <script src="application/template_changer.js"></script>
+
+    <script>
+	$(function() {
+	 // $("#newsitems" ).dialog();
+
+       // $("#newsitems").disableSelection();
+        //alert('');
+
+	});
+	</script>
 
 <!------ JS Templates ----------->
 <? include("application/templates/main.php"); ?>

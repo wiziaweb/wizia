@@ -29,39 +29,52 @@ ModuleBarView = Backbone.View.extend({
         var template_panelbar = _.template( $("#page-tree").html(), {} );
         $("#panelbar").html( template_panelbar );
         $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-        this.showPanelBar();
+        this.showPanelBar(200);
     },
 
-    // main buttons
+    // Action pour le bouton NEWS
     mainButtonNews: function () {
-        var template = _.template( $("#news_template").html(), {} );
+
+
+
+        var template = _.template( $("#news-template").html(), {} );
         $("#main-editor").html( template );
+        var template_modulebar = _.template( $("#page-tree").html(), {} );
+        $("#modulebar").html( "NEWS2" );
+        var template_panelbar = _.template( $("#news-panelbar").html(), {} );
+        $("#panelbar").html( template_panelbar );
         $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
+        $( "#newsitems" ).sortable({ axis: 'y' });
+        this.showPanelBar(300);
     },
 
     // main buttons
     mainButtonMobile: function () {
-        var template = _.template( $("#mobile_template").html(), {} );
-        $("#main-editor").html( template );
+
+        newslistview = new NewsListView({model: myAlbum});
+        newslistview.render();
+
+        $("#main-editor").html( template )(this.model.toJSON());
         $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
-        $( "#dialog" ).dialog({
+       /* $("#dialog" ).dialog({
 			height: 140,
 			modal: true
-		});
+		});*/
+        //return this;
     },
-    // main buttons
+
     mainButtonExit: function () {
         //var template = _.template( $("#mobile_template").html(), {} );
 
         if($("#main-editor").css("left")=="250px")
         {
-        $("#modulebar").css("width",200);
-        $("#panelbar").hide();
-        $("#main-editor").css("left",200);
+            $("#modulebar").css("width",200);
+            $("#panelbar").hide();
+            $("#main-editor").css("left",200);
         }else{
-        $("#modulebar").css("width",50);
-        $("#panelbar").show();
-        $("#main-editor").css("left",250);
+            $("#modulebar").css("width",50);
+            $("#panelbar").show();
+            $("#main-editor").css("left",250);
         }
 
     },
@@ -78,9 +91,11 @@ ModuleBarView = Backbone.View.extend({
         $("#main-editor").css("left",200);
     },
 
-    showPanelBar: function(){
+    showPanelBar: function(panelbarwidth){
+
         $("#modulebar").css("width",50);
+        $("#panelbar").css("width",panelbarwidth);
         $("#panelbar").show();
-        $("#main-editor").css("left",250);
+        $("#main-editor").css("left",panelbarwidth+50);
     }
 });

@@ -1,0 +1,11 @@
+#news-list li{
+  list-style-type:none;
+  margin-left:-40px;
+}
+.news-item{
+
+  background-color:white;
+  padding:5px;
+  margin:5px;
+  box-shadow: 2px 2px 5px #aaa;
+}
