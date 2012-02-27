@@ -2,6 +2,7 @@ PageView = Backbone.View.extend({
     el: $("body"),
     initialize: function () {
       this.friends = new Friends( null, { view: this });
+
       //Create a friends collection when the view is initialized.
       //Pass it a reference to this view to create a connection between the two
     },
@@ -14,7 +15,7 @@ PageView = Backbone.View.extend({
     // main buttons
     addPage: function () {
         $('#page-tree-list').append("<li ><a href=# class=page>ADDED!!!</a></li>");
-        alert('PageView');
+        //alert('PageView');
 
     },
 
@@ -28,7 +29,7 @@ PageView = Backbone.View.extend({
     },
         // main buttons
     showPageTree: function () {
-        var template = _.template( $("#page-tree").html(), {} );
+        var template = _.template( $("#page-tree").html() );
         $("#main-editor").html( template );
         $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
         $( "#dialog" ).dialog({

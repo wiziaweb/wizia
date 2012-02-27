@@ -4,6 +4,7 @@ EditorView = Backbone.View.extend({
 
     initialize: function () {
       this.friends = new Friends( null, { view: this });
+        //alert('EditorView');
       //Create a friends collection when the view is initialized.
       //Pass it a reference to this view to create a connection between the two
     },

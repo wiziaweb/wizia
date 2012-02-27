@@ -3,7 +3,7 @@
   //var appview = new AppView;
   var editorview = new EditorView;
   var pageview = new PageView;
-  var modulebarview = new ModuleBarView({model : myAlbum});
+  var modulebarview = new ModuleBarView({model: NewsItem});
 
 
 })(jQuery);

@@ -1,12 +1,14 @@
 
   NewsItem = Backbone.Model.extend({
     //Create a model to hold friend atribute
-    name: null,
-    artist: null,
+    name: "Talk It Over In Bed",
+    artist: "",
   });
 
   NewsItems = Backbone.Collection.extend({
-    model: NewsItem
+    model: NewsItem,
+     // Save all of the todo items under the `"todos"` namespace.
+    localStorage: new Store("todos-backbone"),
     }
   );
 
@@ -22,12 +24,12 @@
       //Listen for new additions to the collection and call a view function if so
     }
   });
+   	var items = new NewsItems();
 
-    var news1 = new NewsItem({ name: "How Bizarre", artist: "OMC" });
-	var news2 = new NewsItem({ name: "Sexual Healing", artist: "Marvin Gaye" });
-	var news3 = new NewsItem({ name: "Talk It Over In Bed", artist: "OMC" });
+    var item_one = new NewsItem({ name:"1",artist:"offspring" });
+    var item_two = new NewsItem({ name:"2",artist:"offspring" });
+    items.add(item_one);
+    items.add(item_two);
 
-	var myAlbum = new NewsItems([ news1, news2, news3]);
-    myAlbum.fetch();
-	console.log(  ); // [song1, song2, song3]
-
+	//var myAlbum = new NewsItems(news1);
+    //myAlbum.fetch();

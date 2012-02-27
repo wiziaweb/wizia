@@ -1,7 +1,8 @@
+
 ModuleBarView = Backbone.View.extend({
     el: $("body"),
     initialize: function () {
-
+               alert('ModuleBarView');
     },
 
     events:{
@@ -51,11 +52,22 @@ ModuleBarView = Backbone.View.extend({
     // main buttons
     mainButtonMobile: function () {
 
-        newslistview = new NewsListView({model: myAlbum});
+        //alert(myAlbum);
+        alert(JSON.stringify(items));
+        // $("#news-list").html("OK");
+        var newslistview = new NewsItemView();
+        newslistview.addAll();
         newslistview.render();
+        /*_.each({one : 1, two : 2, three : 3},function(num,key){
+          //alert(num);
+            //var newslistview = new NewsItemView({model: item});
+            //newslistview.render();
+        });     */
 
-        $("#main-editor").html( template )(this.model.toJSON());
-        $("#notification-label").show().effect("highlight", {mode:"hide"}, 3000);
+        //alert('');
+
+
+
        /* $("#dialog" ).dialog({
 			height: 140,
 			modal: true

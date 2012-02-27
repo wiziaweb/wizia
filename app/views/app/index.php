@@ -74,12 +74,14 @@
 <script src="lib/backbone-localstorage.js"></script>
 
 <!--APP-->
-<script src="application/models/editormodel.js"></script>
+ <script src="application/models/editormodel.js"></script>
+<script src="application/views/news.js"></script>
+
 
 <script src="application/views/modulebar.js"></script>
 <script src="application/views/panelbar.js"></script>
 <script src="application/views/pages.js"></script>
-<script src="application/views/news.js"></script>
+
 <script src="application/views/editor.js"></script>
 <script src="application/views/main.js"></script>
 <script src="application/template_changer.js"></script>

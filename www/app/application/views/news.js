@@ -1,17 +1,37 @@
-NewsListView = Backbone.View.extend({
-    el: $("#news-list"),
+
+ NewsItemView = Backbone.View.extend({
+    el: "#news-list",
+    tagName: "li",
+
+    template: _.template( $('#news-list').html() ),
 
     initialize : function(){
-      _.bindAll(this, 'render');
-      this.template = _.template($('#mobile_template').html());
+      // _.bindAll(this, 'render');
+        //$(this.el).html(this.template(this.model.toJSON()));
+        //return this;
+        alert('');
 
     },
 
     render : function(){
-      var rendered = this.template(this.model.toJSON());
-      $(this.el).html(rendered);
-      alert('NewsListView Rendering' + this.model.toJSON());
+      //alert(JSON.stringify(this.model));
+      //$(this.el).html(this.template(this.model.toJSON()));
+      //return this;
+      //$(this.el).append("dede");
       return this;
-      },
+    },
+
+
+    addOne: function(todo) {
+      //var view = new TodoView({model: todo});
+      //$("#news-list").append(view.render().el);
+      //$("#news-list").append(view.render().el);
+    },
+¶
+
+    addAll: function() {
+      $("#news-list").html("OK");
+      //items.each(this.addOne);
+    },
 
 });
